@@ -1,6 +1,7 @@
 package homeoffice.step_definitions;
 
 import homeoffice.navigation.NavigateTo;
+import homeoffice.page_objects.SS_PeriodOfStay;
 import homeoffice.page_objects.SS_ReasonForVisit;
 import homeoffice.page_objects.SS_WhatNationality;
 import io.cucumber.java.en.Given;
@@ -12,12 +13,9 @@ public class NonUKResidentsVisitsSteps {
 
     @Steps
     NavigateTo navigateTo;
-//    @Steps
-//    SS_CheckUKVisa checkUKVisaStart;
-    @Steps
     SS_WhatNationality whatNationality;
-    @Steps
     SS_ReasonForVisit reasonForVisit;
+    SS_PeriodOfStay periodOfStay;
 
     //Given I provide a nationality of Japan
     @Given("^I provide a nationality of (.*?)?")
@@ -34,10 +32,11 @@ public class NonUKResidentsVisitsSteps {
         System.out.println("[iSelectTheReason] getting nationality from previous step: " + whatNationality.getNationality());
     }
 
-    @Given("^I state I (am intending|am not intending) to stay for (more|less) than (\\d+) months?")
-    public void iStateI_AmOrNot_IntendingToStayForPeriod(String visitStaying, String visitMoreLess, int visitDuration) {
-        System.out.println("[iStateI_AmOrNot_IntendingToStayForPeriod] visitStaying: " +
-                visitStaying + "visitMoreLess: " + visitMoreLess + "visitDuration: " + visitDuration);
+    @Given("^I state I am intending to stay for (more|less) than (\\d+) months?")
+    public void iStateI_AmOrNot_IntendingToStayForPeriod(String visitMoreLess, int visitDuration) {
+        System.out.println("[iStateI_AmOrNot_IntendingToStayForPeriod] visitStaying: visitMoreLess: " + visitMoreLess + "visitDuration: " + visitDuration);
+        periodOfStay.selectPeriodOfStay(visitMoreLess);
+
     }
 
     @Given("I state I am not travelling or visiting a partner or family")
