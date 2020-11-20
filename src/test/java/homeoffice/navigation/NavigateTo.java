@@ -10,4 +10,12 @@ public class NavigateTo {
     public void theDuckDuckGoHomePage() {
         duckDuckGoHomePage.open();
     }
+
+    HomeOfficeCheckUKVisaPage homeOfficeCheckUKVisaPage;
+
+    @Step("Open the Home Office Check-UK-Visa page")
+    public void theHomeOfficeCheckUKVisaPage() {
+        System.out.println("SS_NavigateTo - [homeOfficeCheckUKVisaPage]  open chrome and url: ");
+        homeOfficeCheckUKVisaPage.open();
+    }
 }
