@@ -8,11 +8,13 @@ Feature: Confirm whether a visa is required to visit the UK
     Given I provide a nationality of <nationality>
     And I select the reason <reason>
     And I state I am intending to stay for more than <visitDuration> months
+    #And I state I am intending to stay for less than <visitDuration> months
     When I submit the form
     Then I will be informed <expectedReply>
     Examples:
-      | nationality | reason | visitDuration | expectedReply                    |
-      | Japan       | Study  | 6             | I need a visa to study in the UK |
+      | nationality | reason | visitDuration | expectedReply                            |
+      | Japan       | Study  | 6             | You’ll need a visa to study in the UK    |
+      #| Japan       | Study  | 6             | You do not need a visa to come to the UK |
 
 
   Scenario Outline: Check UK VISA for Tourism
@@ -21,8 +23,8 @@ Feature: Confirm whether a visa is required to visit the UK
     When I submit the form
     Then I will be informed <expectedReply>
     Examples:
-      | nationality | reason  | visitDuration | expectedReply                         |
-      | Japan       | tourism |               | I wont need a visa to study in the UK |
+      | nationality | reason  | visitDuration | expectedReply                                           |
+      | Japan       | tourism |               | You do not need a visa if you’re staying up to 6 months |
 
 
   Scenario Outline: Check UK VISA for Tourism not visiting family or partner
