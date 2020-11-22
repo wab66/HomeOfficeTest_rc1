@@ -31,8 +31,9 @@ Feature: Confirm whether a visa is required to visit the UK
     Given I provide a nationality of <nationality>
     And I select the reason <reason>
     And I state I am not travelling or visiting a partner or family
+    #And I state I am travelling or visiting a partner or family
     When I submit the form
     Then I will be informed <expectedReply>
     Examples:
-      | nationality | reason  | visitDuration | expectedReply                         |
-      | Russia      | Tourism |               | You’ll need a visa to study in the UK |
+      | nationality | reason  | expectedReply                        |
+      | Russia      | Tourism | You’ll need a visa to come to the UK |

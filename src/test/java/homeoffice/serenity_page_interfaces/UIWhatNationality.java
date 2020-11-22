@@ -1,4 +1,4 @@
-package homeoffice.page_objects;
+package homeoffice.serenity_page_interfaces;
 
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
@@ -13,10 +13,8 @@ public class UIWhatNationality extends UIInteractionSteps {
         return currentNationality;
     }
 
-    @Step("Enter your Nationality {0}")
+    @Step("Enter your Nationality")
     public void selectNationality(String nationality) {
-//        $(POWhatNationality.COUNTRY_DROPDOWN).selectByVisibleText(nationality);
-//        $(POWhatNationality.NEXT_STEP_BUTTON).click();
         find(COUNTRY_DROPDOWN).selectByVisibleText(nationality);
         find(NEXT_STEP_BUTTON).click();
     }

@@ -1,19 +1,19 @@
-package homeoffice.page_objects;
+package homeoffice.serenity_page_interfaces;
+
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
+import static homeoffice.page_objects.POPeriodOfStay.*;
 
 public class UIPeriodOfStay extends UIInteractionSteps {
-
-    @Step("Reason for UK visit")
+    @Step("Are you staying longer than 6 months")
     public void selectPeriodOfStay(String studyPeriodGreaterOrLess6Months) {
-        System.out.println("SS_PeriodOfStudy [selectPeriodOfStudy]]: ");
         if(studyPeriodGreaterOrLess6Months.toLowerCase().contains("more")){
-            $(POPeriodOfStay.PERIOD_GREATER6_RADIOBUTTON).click();
+            find(PERIOD_GREATER6_RADIOBUTTON).click();
         }else if(studyPeriodGreaterOrLess6Months.toLowerCase().contains("less")){
-            $(POPeriodOfStay.PERIOD_LESS6_RADIOBUTTON).click();
+            find(PERIOD_LESS6_RADIOBUTTON).click();
         }else{
             System.out.println("Error - no such period - must be > or <");
         }
-        $(POReasonForVisit.NEXT_STEP_BUTTON).click();
+        find(NEXT_STEP_BUTTON).click();
     }
 }

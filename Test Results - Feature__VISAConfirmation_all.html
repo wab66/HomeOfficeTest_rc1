@@ -2,7 +2,7 @@
 <html xmlns:str="http://exslt.org/strings" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Test Results &mdash; Scenario: Check UK VISA for &gt; 6 months Study</title>
+        <title>Test Results &mdash; Feature: VISAConfirmation</title>
         <style type="text/css">
           html {
             height: 100%
@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">38.49 s</div>
+                <div class="time" xmlns="">20.56 s</div>
                 <h1>
-                    Scenario: Check UK VISA for &gt; 6 months Study: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">12 total, </span><span class="failed">1 failed, </span><span class="ignored">4 ignored, </span><span class="passed">7 passed</span></strong>
+                    Feature: VISAConfirmation: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">17 total, </span><span class="passed">17 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -591,133 +591,61 @@ jQuery.cookie = function(name, value, options) {
             </div>
             <div id="content">
                 <ul id="tree">
-                    <li xmlns="" class="level top failed open">
+                    <li xmlns="" class="level top open">
                         <span><em class="time">
-                                <div class="time">38.49 s</div>
+                                <div class="time">20.56 s</div>
                             </em>Feature: Confirm whether a visa is required to visit the UK</span>
                         <ul>
-                            <li class="level suite failed open">
+                            <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">38.49 s</div>
+                                        <div class="time">15.80 s</div>
                                     </em>Scenario Outline: Check UK VISA for &gt; 6 months Study</span>
                                 <ul>
-                                    <li class="level suite failed open">
+                                    <li class="level suite open">
                                         <span><em class="time">
-                                                <div class="time">38.49 s</div>
+                                                <div class="time">15.80 s</div>
                                             </em>Examples:</span>
                                         <ul>
-                                            <li class="level suite failed open">
+                                            <li class="level suite open">
                                                 <span><em class="time">
-                                                        <div class="time">36.62 s</div>
-                                                    </em>Scenario: Line: 15</span>
+                                                        <div class="time">15.80 s</div>
+                                                    </em>Scenario: Line: 16</span>
                                                 <ul>
-                                                    <li class="level test failed open">
+                                                    <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">36.61 s</div>
-                                                            </em><em class="status">failed</em>Given I provide a nationality of Japan</span>
+                                                                <div class="time">13.93 s</div>
+                                                            </em><em class="status">passed</em>Given I provide a nationality of Japan</span>
                                                         <ul>
                                                             <li class="text">
                                                                 <span class="stderr">WARNING: An illegal reflective access operation has occurred<br/>WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/C:/Users/user/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)<br/>WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1<br/>WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations<br/>WARNING: All illegal access operations will be denied in a future release<br/></span>
                                                             </li>
                                                             <li class="text">
-                                                                <span class="stdout">Nationality: Japan<br/>SS_NavigateTo - [homeOfficeCheckUKVisaPage]  open chrome and url: <br/></span>
+                                                                <span class="stdout">SS_NavigateTo - [homeOfficeCheckUKVisaPage]  open chrome and url: <br/></span>
                                                             </li>
                                                             <li class="text">
-                                                                <span class="stderr">Nov 21, 2020 3:13:09 PM org.openqa.selenium.remote.DesiredCapabilities chrome<br/>INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`<br/></span>
+                                                                <span class="stderr">Nov 21, 2020 7:11:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome<br/>INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`<br/></span>
                                                             </li>
                                                             <li class="text">
-                                                                <span class="stdout">15:13:11.269 [main] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver<br/>15:13:11.284 [main] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }<br/></span>
+                                                                <span class="stdout">19:11:23.327 [main] INFO  n.s.c.w.d.ProvideNewDriver - Instantiating driver<br/>19:11:23.348 [main] INFO  n.s.c.w.d.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors;\n, --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }<br/></span>
                                                             </li>
                                                             <li class="text">
-                                                                <span class="stderr">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver<br/>	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:144)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)<br/>	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:903)<br/>	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:804)<br/>	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:792)<br/>	at homeoffice.navigation.NavigateTo.theHomeOfficeCheckUKVisaPage(NavigateTo.java:19)<br/>	at homeoffice.navigation.NavigateTo$ByteBuddy$3s63f1m2.theHomeOfficeCheckUKVisaPage$accessor$CvjO4kj7(Unknown Source)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)<br/>	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)<br/>	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)<br/>	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)<br/>	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)<br/>	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)<br/>	at homeoffice.navigation.NavigateTo$ByteBuddy$3s63f1m2.theHomeOfficeCheckUKVisaPage(Unknown Source)<br/>	at homeoffice.step_definitions.NonUKResidentsVisitsSteps.iProvideANationality(NonUKResidentsVisitsSteps.java:24)<br/>	at ✽.I provide a nationality of Japan(file:/C:/Workspace/Rob%20Java%20Stuff/JobProjects/HomeOfficeTest/HomeOfficeTest_rc1/src/test/resources/features/confirm_visa/VISAConfirmation.feature:8)<br/>Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Timed out waiting for driver server to start.<br/>Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:17:03&#39;<br/>System info: host: &#39;DESKTOP-DFCEO5G&#39;, ip: &#39;192.168.0.32&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;11.0.8&#39;<br/>Driver info: driver.version: ProvideNewDriver). See below for more details.<br/>	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:158)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:141)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:132)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:102)<br/>	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)<br/>	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:903)<br/>	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:804)<br/>	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:792)<br/>	at homeoffice.navigation.NavigateTo.theHomeOfficeCheckUKVisaPage(NavigateTo.java:19)<br/>	at homeoffice.navigation.NavigateTo$ByteBuddy$3s63f1m2.theHomeOfficeCheckUKVisaPage$accessor$CvjO4kj7(Unknown Source)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)<br/>	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)<br/>	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)<br/>	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)<br/>	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)<br/>	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)<br/>	at homeoffice.navigation.NavigateTo$ByteBuddy$3s63f1m2.theHomeOfficeCheckUKVisaPage(Unknown Source)<br/>	at homeoffice.step_definitions.NonUKResidentsVisitsSteps.iProvideANationality(NonUKResidentsVisitsSteps.java:24)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at cucumber.runtime.Utils$1.call(Utils.java:26)<br/>	at cucumber.runtime.Timeout.timeout(Timeout.java:16)<br/>	at cucumber.runtime.Utils.invoke(Utils.java:20)<br/>	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)<br/>	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)<br/>	at cucumber.runner.TestStep.executeStep(TestStep.java:65)<br/>	at cucumber.runner.TestStep.run(TestStep.java:50)<br/>	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)<br/>	at cucumber.runner.TestCase.run(TestCase.java:46)<br/>	at cucumber.runner.Runner.runPickle(Runner.java:50)<br/>	at cucumber.runtime.Runtime$1.run(Runtime.java:104)<br/>	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)<br/>	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br/>	at cucumber.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:258)<br/>	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)<br/>	at cucumber.runtime.Runtime.run(Runtime.java:101)<br/>	at io.cucumber.core.cli.Main.run(Main.java:43)<br/>	at io.cucumber.core.cli.Main.main(Main.java:14)<br/>Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.<br/>Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:17:03&#39;<br/>System info: host: &#39;DESKTOP-DFCEO5G&#39;, ip: &#39;192.168.0.32&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;11.0.8&#39;<br/>Driver info: driver.version: ProvideNewDriver<br/>	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)<br/>	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)<br/>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)<br/>	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)<br/>	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)<br/>	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)<br/>	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)<br/>	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.lambda$newInstance$0(ChromeDriverProvider.java:64)<br/>	at net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver.withConfiguration(ProvideNewDriver.java:40)<br/>	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:60)<br/>	at net.thucydides.core.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:169)<br/>	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:150)<br/>	... 43 more<br/>Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:18987/status] to be available after 20019 ms<br/>	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)<br/>	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)<br/>	... 56 more<br/>Caused by: java.util.concurrent.TimeoutException<br/>	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)<br/>	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)<br/>	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)<br/>	... 57 more<br/></span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level test ignored open">
-                                                        <span><em class="time">
-                                                                <div class="time">1 ms</div>
-                                                            </em><em class="status">ignored</em>Given I select the reason Study</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">Skipped step<br/></span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level test ignored open">
-                                                        <span><em class="time">
-                                                                <div class="time">1 ms</div>
-                                                            </em><em class="status">ignored</em>Given I state I am intending to stay for more than 6 months</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">Skipped step<br/></span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level test ignored open">
-                                                        <span><em class="time">
-                                                                <div class="time">1 ms</div>
-                                                            </em><em class="status">ignored</em>Given I submit the form</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">Skipped step<br/></span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level test ignored open">
-                                                        <span><em class="time">
-                                                                <div class="time">1 ms</div>
-                                                            </em><em class="status">ignored</em>Given I will be informed You&rsquo;ll need a visa to study in the UK</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">Skipped step<br/></span>
+                                                                <span class="stderr">Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 1588<br/>Only local connections are allowed.<br/>Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.<br/>ChromeDriver was started successfully.<br/>[1605985886.810][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.<br/>Nov 21, 2020 7:11:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession<br/>INFO: Detected dialect: W3C<br/></span>
                                                             </li>
                                                         </ul>
                                                     </li>
                                                     <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">6 ms</div>
-                                                            </em><em class="status">passed</em>Hook: after</span>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level suite open">
-                                                <span><em class="time">
-                                                        <div class="time">1.87 s</div>
-                                                    </em>Scenario: Line: 16</span>
-                                                <ul>
-                                                    <li class="level test">
-                                                        <span><em class="time">
-                                                                <div class="time">373 ms</div>
-                                                            </em><em class="status">passed</em>Given I provide a nationality of Japan</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">Nationality: Japan<br/></span>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level test">
-                                                        <span><em class="time">
-                                                                <div class="time">582 ms</div>
+                                                                <div class="time">784 ms</div>
                                                             </em><em class="status">passed</em>Given I select the reason Study</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">[iSelectTheReason] visitReason: Study<br/>SS_ReasonForVisit [reasonForUKVisit]]: <br/>[iSelectTheReason] getting nationality from previous step: null<br/></span>
-                                                            </li>
-                                                        </ul>
                                                     </li>
                                                     <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">901 ms</div>
+                                                                <div class="time">800 ms</div>
                                                             </em><em class="status">passed</em>Given I state I am intending to stay for more than 6 months</span>
-                                                        <ul>
-                                                            <li class="text">
-                                                                <span class="stdout">[iStateI_Am_IntendingToStayForPeriod] visitStaying: visitMoreLess: morevisitDuration: 6<br/>SS_PeriodOfStudy [selectPeriodOfStudy]]: <br/></span>
-                                                            </li>
-                                                        </ul>
                                                     </li>
                                                     <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">2 ms</div>
+                                                                <div class="time">1 ms</div>
                                                             </em><em class="status">passed</em>Given I submit the form</span>
                                                         <ul>
                                                             <li class="text">
@@ -727,17 +655,144 @@ jQuery.cookie = function(name, value, options) {
                                                     </li>
                                                     <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">2 ms</div>
-                                                            </em><em class="status">passed</em>Given I will be informed You do not need a visa to come to the UK</span>
+                                                                <div class="time">277 ms</div>
+                                                            </em><em class="status">passed</em>Given I will be informed You&rsquo;ll need a visa to study in the UK</span>
                                                         <ul>
                                                             <li class="text">
-                                                                <span class="stdout">[iWillBeInformedAboutVisaForUK] expectedReply: You do not need a visa to come to the UK<br/></span>
+                                                                <span class="stdout">[iWillBeInformedAboutVisaForUK] expectedReply: You’ll need a visa to study in the UK<br/></span>
                                                             </li>
                                                         </ul>
                                                     </li>
                                                     <li class="level test">
                                                         <span><em class="time">
-                                                                <div class="time">8 ms</div>
+                                                                <div class="time">3 ms</div>
+                                                            </em><em class="status">passed</em>Hook: after</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">1.97 s</div>
+                                    </em>Scenario Outline: Check UK VISA for Tourism</span>
+                                <ul>
+                                    <li class="level suite open">
+                                        <span><em class="time">
+                                                <div class="time">1.97 s</div>
+                                            </em>Examples:</span>
+                                        <ul>
+                                            <li class="level suite open">
+                                                <span><em class="time">
+                                                        <div class="time">1.97 s</div>
+                                                    </em>Scenario: Line: 27</span>
+                                                <ul>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">1.13 s</div>
+                                                            </em><em class="status">passed</em>Given I provide a nationality of Japan</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">SS_NavigateTo - [homeOfficeCheckUKVisaPage]  open chrome and url: <br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">735 ms</div>
+                                                            </em><em class="status">passed</em>Given I select the reason Tourism</span>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">1 ms</div>
+                                                            </em><em class="status">passed</em>Given I submit the form</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">[iSubmitTheForm] - already submitted<br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">101 ms</div>
+                                                            </em><em class="status">passed</em>Given I will be informed You do not need a visa if you&rsquo;re staying up to 6 months</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">[iWillBeInformedAboutVisaForUK] expectedReply: You do not need a visa if you’re staying up to 6 months<br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">2 ms</div>
+                                                            </em><em class="status">passed</em>Hook: after</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">2.79 s</div>
+                                    </em>Scenario Outline: Check UK VISA for Tourism not visiting family or partner</span>
+                                <ul>
+                                    <li class="level suite open">
+                                        <span><em class="time">
+                                                <div class="time">2.79 s</div>
+                                            </em>Examples:</span>
+                                        <ul>
+                                            <li class="level suite open">
+                                                <span><em class="time">
+                                                        <div class="time">2.79 s</div>
+                                                    </em>Scenario: Line: 39</span>
+                                                <ul>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">1.36 s</div>
+                                                            </em><em class="status">passed</em>Given I provide a nationality of Russia</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">SS_NavigateTo - [homeOfficeCheckUKVisaPage]  open chrome and url: <br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">675 ms</div>
+                                                            </em><em class="status">passed</em>Given I select the reason Tourism</span>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">679 ms</div>
+                                                            </em><em class="status">passed</em>Given I state I am not travelling or visiting a partner or family</span>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">1 ms</div>
+                                                            </em><em class="status">passed</em>Given I submit the form</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">[iSubmitTheForm] - already submitted<br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">71 ms</div>
+                                                            </em><em class="status">passed</em>Given I will be informed You&rsquo;ll need a visa to come to the UK</span>
+                                                        <ul>
+                                                            <li class="text">
+                                                                <span class="stdout">[iWillBeInformedAboutVisaForUK] expectedReply: You’ll need a visa to come to the UK<br/></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="level test">
+                                                        <span><em class="time">
+                                                                <div class="time">3 ms</div>
                                                             </em><em class="status">passed</em>Hook: after</span>
                                                     </li>
                                                 </ul>
@@ -752,7 +807,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by IntelliJ IDEA on 21/11/2020, 15:15</p>
+            <p>Generated by IntelliJ IDEA on 21/11/2020, 19:14</p>
         </div>
     </body>
 </html>
